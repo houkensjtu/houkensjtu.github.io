@@ -1,0 +1,140 @@
+/*
+ * ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ CSS ãƒ•ã‚¡ã‚¤ãƒ«
+ *
+ * 2019 Yuu Kasuga
+ */
+
+/* å…¨ä½“ */
+body {
+	color: #333366;
+	background-color: #ffffff;
+	font-family: sans-serif;
+	font-size: small;
+	padding-left: 5%;
+	padding-right: 5%;
+	line-height: 1.5em;
+	/*background-repeat: repeat;
+	background-image: url("http://penguinitis.g1.xrea.com/checker.png");*/
+	background-repeat: repeat-y;
+	background-image: url("http://penguinitis.g1.xrea.com/back.png");
+}
+
+/* åŸºæœ¬ãƒ†ãƒ¼ãƒ–ãƒ« */
+table#base {
+	width: 800px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align: left;
+	border-style: none;
+}
+
+/* æ›´æ–° */
+p#update {
+	font-size: small;
+	text-align: center;
+}
+
+/* å¢ƒç•Œç·š */
+td#border {
+	background-color:#9999cc;
+	height: 2px;
+}
+
+/* ã‚³ãƒ”ãƒ¼ãƒ©ã‚¤ãƒˆ */
+td#copyright {
+	font-size: small;
+	text-align: center;
+}
+
+/* ãƒšãƒ¼ã‚¸ã‚¿ã‚¤ãƒˆãƒ« */
+h1#pagetitle {
+	font-size: xx-large;
+	color: #9999cc;
+	border-bottom: solid 3px #9999cc;
+	text-align: right;
+}
+
+/* ã‚¿ã‚¤ãƒˆãƒ« */
+h1 {
+	font-size: x-large;
+	color: #9999cc;
+	text-align: center;
+}
+
+/* è¦‹å‡ºã— */
+h2 {
+	font-size: large;
+	color: #6666cc;
+	border-bottom: solid 1px #6666cc;
+}
+
+/* è¦‹å‡ºã— */
+h3 {
+	color: #669900;
+}
+
+/* è¦‹å‡ºã— */
+h4 {
+	color: #cc9900;
+	padding-left: 1%;
+}
+
+/* è¡¨ */
+table {
+	margin: auto;
+	text-align: center;
+	border-collapse: collapse;
+	border: solid 1px #9999ff;
+}
+
+/* ãƒ˜ãƒƒãƒ€ã‚»ãƒ« */
+th {
+	background-color: #ccccff;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+/* ãƒ‡ãƒ¼ã‚¿ã‚»ãƒ« */
+td {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+/* æ•´å½¢æ¸ˆã¿ãƒ†ã‚­ã‚¹ãƒˆ */
+pre {
+	padding-left: 1em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	margin-left: 3%;
+	margin-right: 3%;
+	line-height: 1.1em;
+	background-color: #ddddff;
+	white-space: pre-wrap;
+}
+
+/* ãƒªã‚¹ãƒˆ */
+ul {
+	list-style-type: square;
+}
+
+/* ãƒ‹ãƒ¥ãƒ¼ã‚¹æ—¥ä»˜ */
+p#date {
+	color: #6666ff;
+	font-size: small;
+}
+
+/* ãƒ—ãƒ­ãƒ•ã‚£ãƒ¼ãƒ« */
+table#profile {
+	text-align: center;
+	border-style: none;
+}
+
+/* æ›´æ–° */
+table#update {
+	text-align: left;
+}
+
+/* ãƒªãƒ³ã‚¯ */
+a {
+	color: #333366;
+}
