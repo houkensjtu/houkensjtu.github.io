@@ -1,11 +1,643 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>PENGUINITIS</title>
 
-<!doctype html>
-<html>
-  <head>
-    <title>This is the title of the webpage!</title>
-  </head>
-  <body>
-    <h2>Houken's personal blog</h2>
-    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
-  </body>
+</head>
+
+<body>
+	<table id="base">
+	<tbody>
+		<tr><td><h1 id="pagetitle">PENGUINITIS</h1></td></tr>
+
+		<tr>
+		<td>
+			<center><img src="emperor.png" alt=""></img></center>
+			<table id="update" align="center">
+			<caption>更新情報</caption>
+			<tbody>
+			<tr><td>・プログラミング: <a href="computer/programming/Python/cython_memo.html">Cython メモ</a> を追加 (2019.12.29)</td></tr>
+			<tr><td>・プログラミング: <a href="computer/programming/AWS/role.html">よく使うロール</a> を追加 (2019.12.28)</td></tr>
+			<tr><td>・プログラミング: <a href="computer/programming/Alexa/Alexa_skill_long_wait.html">Alexa スキルで長く待つ</a> を追加 (2019.12.27)</td></tr>
+			<tr><td>・プログラミング: <a href="computer/programming/Python/python_to_exe.html">Python コードの EXE 化</a> を追加 (2019.12.27)</td></tr>
+			<tr><td>・プログラミング: <a href="computer/programming/Python/cryptograph.html">暗号化</a> を追加 (2019.12.27)</td></tr>
+			</tbody>
+			</table>
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+		<p></p>
+<!-- SiteSearch Google -->
+<center>
+<form method=get action="http://www.google.co.jp/search">
+<table bgcolor="#FFFFFF"><tr valign=top><td>
+<a href="http://www.google.co.jp/">
+<img src="//www.google.com/logos/Logo_40wht.gif" border="0" alt="Google" align="absmiddle"></a>
+</td>
+<td>
+<input type=text name=q size=31 maxlength=255 value="">
+<input type=hidden name=ie value=Shift-JIS>
+<input type=hidden name=oe value=Shift-JIS>
+<input type=hidden name=hl value="ja">
+<input type=submit name=btnG value="Google 検索">
+<font size=-1>
+<br>
+<input type=radio name=sitesearch value=""> WWW を検索
+<input type=radio name=sitesearch value="http://penguinitis.g1.xrea.com" checked> PENGUINITIS 内を検索
+</font>
+</td></tr></table>
+</form>
+</center>
+<!-- SiteSearch Google -->
+		<p></p>
+		</td>
+		</tr>
+
+			<tr>
+			<td>
+			<h2></h2>
+
+			<table id="base">
+			<tbody>
+			<tr><td valign="top" width="50%">
+
+			<h3>Linux</h3>
+			<ul>
+			<li><a href="computer/linux/Linux-primer/Linux-primer.html">Linux 入門</a></li>
+			<li><a href="computer/linux/Linux_memo.html">Linux メモ</a></li>
+			</ul>
+
+			<h4>パッケージ管理</h4>
+			<ul>
+			<li><a href="computer/linux/deb.html">deb パッケージの管理</a></li>
+			<li><a href="computer/linux/rpm.html">RPM パッケージの管理</a></li>
+			<li><a href="computer/linux/rpm_build.html">RPM パッケージの作り方</a></li>
+			</ul>
+
+			<h4>シェル</h4>
+			<ul>
+			<li><a href="computer/linux/zsh.html">zsh を使う</a></li>
+			<li><a href="computer/linux/shell_script.html">シェルスクリプト入門</a></li>
+			<li><a href="computer/linux/screen.html">Screen を使う</a></li>
+			</ul>
+
+			<h4>エディタ</h4>
+			<ul>
+			<li><a href="computer/linux/vim.html">VIM の使い方</a></li>
+			<li><a href="computer/linux/emacs.html">Emacs の使い方</a></li>
+			<li><a href="computer/linux/vim_nerdtree.html">NERDTree を使う</a></li>
+			</ul>
+
+			<h4>セットアップ</h4>
+			<p>Ubuntu</p>
+			<ul>
+			<li><a href="computer/linux/Ubuntu_setup.html">Ubuntu のセットアップ</a></li>
+			<li><a href="computer/linux/Ubuntu_Windows_10_dual_boot.html">Ubuntu と Windows 10 のデュアルブート</a></li>
+			<li><a href="computer/linux/Ubuntu_14_04_LTS-hostname.html">ホスト名の変更</a></li>
+			<li><a href="computer/linux/Ubuntu_useradd.html">ユーザーの追加・削除</a></li>
+			<li><a href="computer/linux/Ubuntu_boot_capacity_trouble.html">/boot の容量不足対応</a></li>
+			<li><a href="computer/linux/Ubuntu_guest_session.html">ゲストセッションの無効化</a></li>
+			<li><a href="computer/linux/Ubuntu_NumLock.html">ログイン画面で NumLock を On にする</a></li>
+			<li><a href="computer/linux/Ubuntu_lightdm.html">ログイン画面のサイズの設定</a></li>
+			<li><a href="computer/linux/Ubuntu_workspace.html">ワークスペースを表示する</a></li>
+			<li><a href="computer/linux/Ubuntu_shortcut.html">キーボードショートカットの設定</a></li>
+			<li><a href="computer/linux/Ubuntu_kana.html">かな入力の設定</a></li>
+			<li><a href="computer/linux/Ubuntu_screenshot.html">スクリーンショットを撮る</a></li>
+			<li><a href="computer/linux/Ubuntu_write_ISO_image.html">ISO イメージを書き込む</a></li>
+			<li><a href="computer/linux/Ubuntu_tools.html">便利ツール</a></li>
+			<li><a href="computer/linux/Ubuntu_dash.html">Ubuntu の sh の変更</a></li>
+			<li><a href="computer/linux/GPG_error.html">GPG エラーへの対処</a></li>
+			<li><a href="computer/linux/Ubuntu_Logicool_Ergo_MX.html">Ubuntu で Logicool Ergo MX を使う</a></li>
+			</ul>
+
+			<p>Ubuntu (古い)</p>
+			<ul>
+			<li><a href="computer/linux/Ubuntu_12_04_LTS-GNOME_Classic.html">GNOME Classic の設定</a></li>
+			<li><a href="computer/linux/Ubuntu_12_04_LTS-GNOME_terminal.html">ポップアップメニューから端末を開く設定</a></li>
+			</ul>
+
+			<p>Linux Mint</p>
+			<ul>
+			<li><a href="computer/linux/Linux_Mint_setup.html">Linux Mint のセットアップ</a></li>
+			<li><a href="computer/linux/Linux_Mint_12_boot_trouble.html">Linux Mint 12 起動トラブルメモ</a></li>
+			</ul>
+
+			<p>Red Hat</p>
+			<ul>
+			<li><a href="computer/linux/RedHat_input_japanese.html">Red Hat で日本語入力</a></li>
+			<li><a href="computer/linux/RedHat_sudo.html">sudo の設定</a></li>
+			<li><a href="computer/linux/RedHat_systemd_messages.html">systemd のメッセージの抑制</a></li>
+			<li><a href="computer/linux/RedHat_reboot_trouble.html">勝手に再起動する</a></li>
+			</ul>
+
+			<p>CentOS</p>
+			<ul>
+			<li><a href="computer/linux/CentOS_setup.html">CentOS のセットアップ</a></li>
+			<li><a href="computer/linux/CentOS_kernel_default.html">デフォルト起動カーネルの変更</a></li>
+			</ul>
+
+			<p>その他</p>
+			<ul>
+			<li><a href="computer/linux/SSH.html">SSH の使い方</a></li>
+			<li><a href="computer/linux/Xming.html">Xming を使う</a></li>
+			<li><a href="computer/linux/VNC.html">VNC サーバーの使い方</a></li>
+			<li><a href="computer/linux/xrdp.html">リモートデスクトップ接続の設定</a></li>
+			<li><a href="computer/linux/VirtualGL.html">VirtualGL を使う</a></li>
+			<li><a href="computer/linux/NFS.html">NFS による共有ディレクトリの設定</a></li>
+			<li><a href="computer/linux/SMB_mount.html">SMB 対応サーバーのマウント</a></li>
+			<li><a href="computer/linux/shared_hdd.html">外付け HDD の共有化</a></li>
+			<li><a href="computer/linux/NTFS-RHEL_5_3.html">NTFS の認識</a></li>
+			<li><a href="computer/linux/mail_server.html">ローカルメールサーバーのセットアップ</a></li>
+			<li><a href="computer/linux/NAT.html">Linux マシンをルーターにする</a></li>
+			<li><a href="computer/linux/DHCP.html">DHCP サーバーの設定</a></li>
+			<li><a href="computer/linux/cron.html">cron の設定</a></li>
+			<li><a href="computer/linux/Logicool_Trackman/Logicool_Trackman.html">Linux で Logicool Trackman を使う</a></li>
+			</ul>
+
+			<ul>
+			<li><a href="computer/linux/Redmine_setup.html">Redmine のセットアップ</a></li>
+			<li><a href="computer/linux/TORQUE.html">TORQUE のセットアップ</a></li>
+			<li><a href="computer/linux/PostgreSQL.html">PostgreSQL を使う</a></li>
+			</ul>
+
+			<ul>
+			<li><a href="computer/linux/GRUB2.html">GRUB2 の修復</a></li>
+			<li><a href="computer/linux/alternative.html">コマンドのバージョンの切り替え</a></li>
+			</ul>
+
+			<ul>
+			<li><a href="computer/linux/OOo_japanese.html">OpenOffice.org の日本語環境改善拡張機能</a></li>
+			<li><a href="computer/linux/ClamAV.html">ClamAV のセットアップ</a></li>
+			</ul>
+
+			<h3>HTML</h3>
+			<ul>
+			<li><a href="computer/html/html/html.html">HTML 入門</a></li>
+			<li><a href="computer/html/css.html">CSS 入門</a></li>
+			<li><a href="computer/html/html5.html">HTML5</a></li>
+			<li><a href="computer/html/javascript/javascript.html">JavaScript メモ</a></li>
+			<li><a href="computer/html/websocket/websocket.html">WebSocket</a></li>
+			</ul>
+
+			<h3>仮想化</h3>
+			<ul>
+			<li><a href="computer/VirtualBox-setup/VirtualBox-setup.html">VirtualBox のセットアップ</a></li>
+			<li><a href="computer/VirtualBox-compress_disk_file.html">VirutalBox の仮想ディスクファイルの圧縮</a></li>
+			<li><a href="computer/Docker/Docker.html">Docker による Windows における Linux 環境の整備</a></li>
+			</ul>
+
+			<h3>プログラミング</h3>
+			<ul>
+			<li><a href="computer/programming/programming_basic.html">プログラミングの基礎</a></li>
+			<li><a href="computer/programming/makefile.html">Makefile の書き方</a></li>
+			<li><a href="computer/programming/SCons.html">SCons のすすめ</a></li>
+			<li><a href="computer/programming/CMake.html">CMake</a></li>
+			<li><a href="computer/programming/patch.html">パッチの作り方/当て方</a></li>
+			<li><a href="computer/programming/doxygen.html">Doxygen を使う</a></li>
+			<li><a href="computer/programming/CUnit.html">CUnit を使う</a></li>
+			<li><a href="computer/programming/diff2html/diff2html.html">diff2html の使い方</a></li>
+			</ul>
+
+			<ul>
+			<li><a href="computer/programming/OpenGL/index.html">OpenGL プログラミング</a></li>
+			<li><a href="computer/programming/CUDA/index.html">CUDA プログラミング</a></li>
+			<li><a href="computer/programming/Octave.html">Octave メモ</a></li>
+			<li><a href="computer/programming/Mono_memo.html">Mono メモ</a></li>
+			<li><a href="computer/programming/TAUCS.html">TAUCS を使う</a></li>
+			</ul>
+
+			<ul>
+			<li><a href="computer/programming/Unity/iPhone/iPhone.html">Unity アプリを iPhone 実機で動かす</a></li>
+			<li><a href="computer/programming/NSIS/NSIS.html">NSIS によるインストーラの作成</a></li>
+			<li><a href="computer/programming/WiX.html">WiX によるインストーラの作成</a></li>
+			<li><a href="computer/programming/OOo_basic.html">OpenOffice.org Basic メモ</a></li>
+			</ul>
+
+			<h4>セットアップ</h4>
+			<ul>
+			<li><a href="computer/programming/MinGW-w64.html">MinGW 64 bit 版のセットアップ</a></li>
+			<li><a href="computer/programming/Clang-MinGW-w64.html">Clang を MinGW 64 bit 版でコンパイル</a></li>
+			<li><a href="computer/programming/VS2008-x64.html">Visual Studio 2008 Express Edition で 64 bit 開発</a></li>
+			<li><a href="computer/programming/Windows_SDK_Win7-x64.html">Windows SDK for Windows 7 のセットアップ</a></li>
+			<li><a href="computer/programming/CUDA_Linux_install.html">CUDA Toolkit Linux 版のインストールメモ</a></li>
+			</ul>
+
+			</td>
+
+			<td valign="top">
+
+			<h4>Python</h4>
+			<ul>
+			<li><a href="computer/programming/Python/python_memo.html">Python メモ</a></li>
+			<li><a href="computer/programming/Python/python_coding_style.html">Python のコーディングスタイルのチェック</a></li>
+			<li><a href="computer/programming/Python/python_module.html">Python のモジュールを作る</a></li>
+			<li><a href="computer/programming/Python/unittest/unittest.html">Python コードのユニットテスト</a></li>
+			<li><a href="computer/programming/Python/sphinx.html">Sphinx によるドキュメント作成</a></li>
+			<li><a href="computer/programming/Python/python_packaging.html">Python プロジェクトのパッケージ化</a></li>
+			<li><a href="computer/programming/Python/python_link.html">Python リンク集</a></li>
+			</ul>
+
+			<ul>
+			<li><a href="computer/programming/Python/python_profile/python_profile.html">Python コードのプロファイリング</a></li>
+			<li><a href="computer/programming/Python/function_call_speed.html">Python の関数呼び出しの速度</a></li>
+			<li><a href="computer/programming/Python/cython/cython.html">Cython を使ってみる</a></li>
+			<li><a href="computer/programming/Python/cython_memo.html">Cython メモ</a></li>
+			<li><a href="computer/programming/Python/numba.html">Numba を使ってみる</a></li>
+			<li><a href="computer/programming/Python/call_c_function.html">Python による C の関数の呼び出し</a></li>
+			<li><a href="computer/programming/Python/call_fortran_procedure.html">Python による Fortran の手続きの呼び出し</a></li>
+			<li><a href="computer/programming/Python/Python-C/index.html">C で Python を使う</a></li>
+			</ul>
+
+			<ul>
+			<li><a href="computer/programming/Python/pip.html">PIP の使い方</a></li>
+			<li><a href="computer/programming/Python/conda_virtual_env.html">conda による仮想環境の利用</a></li>
+			<li><a href="computer/programming/Python/Anaconda_update.html">Anaconda のアップデート</a></li>
+			<li><a href="computer/programming/Python/Anaconda_uninstall.html">Anaconda のアンインストール</a></li>
+			<li><a href="computer/programming/Python/Anaconda_Python2_3.html">Anaconda における Python 2 と Python 3 の共存</a></li>
+			</ul>
+
+			<ul>
+			<li><a href="computer/programming/Python/jupyter_notebook/jupyter_notebook.html">Jupyter Notebook の使い方</a></li>
+			<li><a href="computer/programming/Python/jupyter_notebook_shortcut.html">Jupyter Notebook のキーボードショーカット</a></li>
+			<li><a href="computer/programming/Python/jupyter_notebook_html.html">Jupyter Notebook の HTML への変換</a></li>
+			<li><a href="computer/programming/Python/jupyter_notebook_parallel.html">Jupyter Notebook における並列計算</a></li>
+			<li><a href="computer/programming/Python/jupyter_notebook_kernel_error.html">Jupyter Notebook の Kernel error メモ</a></li>
+			<li><a href="computer/programming/Python/jupyterhub.html">JupyterHub のセットアップ</a></li>
+			<li><a href="computer/programming/Python/ipython_memo.html">IPython メモ</a></li>
+			</ul>
+
+			<ul>
+			<li><a href="computer/programming/Python/numpy_scipy_memo.html">NumPy & SciPy メモ</a></li>
+			<li><a href="computer/programming/Python/CuPy.html">CuPy を使ってみる</a></li>
+			<li><a href="computer/programming/Python/matplotlib_memo.html">matplotlib メモ</a></li>
+			<li><a href="computer/programming/Python/xml.html">Python による XML の操作</a></li>
+			<li><a href="computer/programming/Python/ply.html">PLY (Python Lex-Yacc) を使う</a></li>
+			<li><a href="computer/programming/Python/tqdm.html">プログレスバーを表示する tqdm の使い方</a></li>
+			<li><a href="computer/programming/Python/learning_data/learning_data.html">データ間の関係の学習</a></li>
+			<li><a href="computer/programming/Python/web_scraping.html">ウェブ・スクレイピング</a></li>
+			<li><a href="computer/programming/Python/pdf.html">PDF を読む</a></li>
+			<li><a href="computer/programming/Python/pdf_image.html">PDF を画像に変換する</a></li>
+			<li><a href="computer/programming/Python/morphological_analysis.html">形態素解析</a></li>
+			<li><a href="computer/programming/Python/difflib.html">文字列の類似度</a></li>
+			<li><a href="computer/programming/Python/cryptograph.html">暗号化</a></li>
+			<li><a href="computer/programming/Python/python_to_exe.html">Python コードの EXE 化</a></li>
+			</ul>
+
+			<ul>
+			<li><a href="computer/programming/Python/petsc4py_install.html">petsc4py のインストール</a></li>
+			<li><a href="computer/programming/Python/TensorFlow_compile.html">TensorFlow のコンパイル</a></li>
+			<li><a href="computer/programming/Python/LightGBM_install.html">LightGBM のインストール</a></li>
+			</ul>
+
+			<h4>JavaScript</h4>
+			<ul>
+			<li><a href="computer/programming/JavaScript/Plotly.html">Plotly メモ</a></li>
+			</ul>
+
+			<ul>
+			<li><a href="computer/programming/JavaScript/Nodejs_setup.html">Node.js のセットアップ</a></li>
+			<li><a href="computer/programming/JavaScript/Nodejs_PostgreSQL.html">Node.js から PostgreSQL への接続</a></li>
+			</ul>
+
+			<h4>R</h4>
+			<ul>
+			<li><a href="computer/programming/R/install_memo.html">R をインストールするメモ</a></li>
+			<li><a href="computer/programming/R/Jupyter_Notebook-R.html">Jupyter Notebook で R を使う</a></li>
+			<li><a href="computer/programming/R/dnorm/dnorm.html">正規分布を描く</a></li>
+			</ul>
+
+			<h4>VTK</h4>
+			<ul>
+			<li><a href="computer/programming/VTK/VTK-compile.html">VTK のコンパイル</a></li>
+			<li><a href="computer/programming/VTK/VTK-memo/VTK-memo.html">VTK メモ</a></li>
+			<li><a href="computer/programming/Python/VTK/VTK.html">VTK メモ (Python)</a></li>
+			</ul>
+
+			<h4>Qt</h4>
+			<ul>
+			<li><a href="computer/programming/Qt/Qt-memo/Qt-memo.html">Qt メモ</a></li>
+			<li><a href="computer/programming/Python/PyQt5/PyQt5-memo/PyQt5-memo.html">PyQt5 メモ</a></li>
+			<li><a href="computer/programming/Python/PyQt5/PyQt5-console/PyQt5-console.html">PyQt5 によるコンソールの作成</a></li>
+			</ul>
+
+			<h4>GTK+</h4>
+			<ul>
+			<li><a href="computer/programming/GTK/index.html">GTK+ プログラミング</a></li>
+			<li><a href="computer/programming/GTK/console/console.html">GTK+ によるコンソールもどき</a></li>
+			<li><a href="computer/programming/Python/gpython/gpython.html">GTK+ による Python コンソールの作成</a></li>
+			<li><a href="computer/programming/Python/PyGTK/index.html">PyGTK プログラミング</a></li>
+			</ul>
+
+			<ul>
+			<li><a href="computer/programming/GtkGLExt/GtkGLExt-install.html">GtkGLExt をコンパイルするメモ</a></li>
+			<li><a href="computer/programming/GtkGLExt/GtkGLExt-sample.html">GtkGLExt を使ってみる</a></li>
+			</ul>
+
+			<h4>Alexa</h4>
+			<ul>
+			<li><a href="computer/programming/Alexa/Amazon_Echo_Dot/Amazon_Echo_Dot.html">Amazon Echo Dot のセットアップ</a></li>
+			<li><a href="computer/programming/Alexa/Alexa_skill_primer.html">Alexa スキルを作成してみる</a></li>
+			<li><a href="computer/programming/Alexa/Alexa_skill_development.html">お試し Alexa スキル 開発</a></li>
+			<li><a href="computer/programming/Alexa/Alexa_skill_development_AWS.html">AWS を用いた Alexa スキル 開発</a></li>
+			<li><a href="computer/programming/Alexa/SSML.html">SSML</a></li>
+			<li><a href="computer/programming/Alexa/get_device_address.html">Alexa デバイスの所在地情報の取得</a></li>
+			<li><a href="computer/programming/Alexa/Alexa_skill_long_wait.html">Alexa スキルで長く待つ</a></li>
+			</ul>
+
+			<h4>AWS</h4>
+			<ul>
+			<li><a href="computer/programming/AWS/RDS_for_PostgreSQL.html">Amazon RDS for PostgreSQL</a></li>
+			<li><a href="computer/programming/AWS/Lambda_RDS.html">AWS Lambda から Amazon RDS へのアクセス</a></li>
+			<li><a href="computer/programming/AWS/Lambda_to_Lambda.html">AWS Lambda の関数から Lambda の関数を呼ぶ</a></li>
+			<li><a href="computer/programming/AWS/Lambda_from_HTML.html">AWS Lambda の関数を HTML から呼ぶ</a></li>
+			<li><a href="computer/programming/AWS/DynamoDB.html">Amazon DynamoDB</a></li>
+			<li><a href="computer/programming/AWS/API_Gateway_WebSocket.html">API Gateway による WebSocket API の作成</a></li>
+			<li><a href="computer/programming/AWS/AWS_CLI.html">AWS CLI</a></li>
+			<li><a href="computer/programming/AWS/S3.html">Amazon S3</a></li>
+			<li><a href="computer/programming/AWS/S3_web/S3_web.html">Amazon S3 による Web ページの作成</a></li>
+			<li><a href="computer/programming/AWS/MFA_trouble_shooting.html">AWS のルートアカウントに MFA でログインできない</a></li>
+			<li><a href="computer/programming/AWS/billing.html">IAM ユーザーによる請求情報へのアクセス</a></li>
+			<li><a href="computer/programming/AWS/role.html">よく使うロール</a></li>
+			<li><a href="computer/programming/AWS/AWS_memo.html">AWS メモ</a></li>
+			</ul>
+
+			<h4>FPGA</h4>
+			<ul>
+			<li><a href="computer/programming/FPGA/ZYBO/starting/starting.html">ZYBO Z7 の起動</a></li>
+			<li><a href="computer/programming/FPGA/ZYBO/SDSoC_install.html">SDSoC のインストール</a></li>
+			</ul>
+
+			<h3>macOS</h3>
+			<ul>
+			<li><a href="computer/mac/PDF_compression.html">PDF の圧縮</a></li>
+			<li><a href="computer/mac/PIX-DT195.html">ピクセラ PIX-DT195 セットアップメモ</a></li>
+			</ul>
+
+			<h3>PC</h3>
+			<ul>
+			<li><a href="computer/PC_power_trouble/PC_power_trouble.html">PC の電源が入らないメモ</a></li>
+			<li><a href="computer/PC_trouble.html">PC のトラブルメモ</a></li>
+			<li><a href="computer/Windows7_recovery.html">Windows 7 のリカバリ</a></li>
+			</ul>
+
+			<h3>その他</h3>
+			<ul>
+			<li><a href="computer/gvim.html">Windows 版 gVim の設定</a>
+
+			<li><a href="computer/Thunderbird-Yahoo_mail.html">Thunderbird による Yahoo! メールの同期</a></li>
+			<li><a href="computer/auto_backup.html">データの自動バックアップ</a></li>
+			<li><a href="computer/latex_embeded_font.html">LaTeX でフォントの埋め込み</a></li>
+			<li><a href="computer/Inkscape.html">Inkscape メモ</a></li>
+			<li><a href="computer/SVN.html">SVN メモ</a></li>
+			<li><a href="computer/LibreOffice.html">LibreOffice メモ</a></li>
+			<li><a href="computer/pdftk.html">PDFtk メモ</a></li>
+			<li><a href="computer/gnuplot.html">gnuplot メモ</a></li>
+			<li><a href="computer/Atom/Atom.html">Atom メモ</a></li>
+			<li><a href="computer/Excel_alternative.html">脱・Excel</a></li>
+			<li><a href="computer/Grafana.html">Grafana + InfluxDB による時系列データの表示</a></li>
+			<li><a href="computer/pointing_device_review/pointing_device_review.html">ポインティングデバイスの比較</a></li>
+			</ul>
+
+			</td></tr>
+
+			</tbody>
+			</table>
+
+
+			<h2></h2>
+
+			<table id="base">
+			<tbody>
+			<tr><td valign="top" width="50%">
+
+			<h3>ノート</h3>
+			<ul>
+			<li><a href="study/note/curvilinear.pdf">曲線座標</a> (PDF)</li>
+			<li><a href="study/note/general_coord_transport.pdf">一般座標系におけるスカラー輸送方程式</a> (PDF)</li>
+			<li><a href="study/note/curvilinear_strain.pdf">曲線座標系におけるひずみ</a> (PDF)</li>
+			<li><a href="study/note/elastic_coefficient.pdf">弾性係数テンソル</a> (PDF)</li>
+			<li><a href="study/note/motion_description.pdf">物体の運動の表示 (ラグランジュとオイラー)</a> (PDF)</li>
+			<li><a href="study/note/determinant.pdf">行列式</a> (PDF)</li>
+			<li><a href="study/note/continuity_equation.pdf">連続の式</a> (PDF)</li>
+			<li><a href="study/note/scalar_transportation.pdf">スカラー輸送方程式</a> (PDF)</li>
+			<li><a href="study/note/navier_stokes_equation.pdf">ナビエ・ストークス方程式</a> (PDF)</li>
+			<li><a href="study/note/rosin_rammler.pdf">Rosin-Rammler 分布</a> (PDF)</li>
+			<li><a href="study/note/fem_framework.pdf">有限要素法の枠組み</a> (PDF)</li>
+			<li><a href="study/note/heat_transfer.pdf">熱流動の理論</a> (PDF)</li>
+			<li><a href="study/note/continuum.pdf">連続体とはなにか</a> (PDF)</li>
+			<li><a href="study/note/cylindrical_coord_navier_stokes.pdf">円筒座標系におけるナビエ・ストークス方程式</a> (PDF)</li>
+			<li><a href="study/note/pressure-velocity.pdf">非圧縮性流体計算の圧力-速度連成手法</a>  (PDF)</li>
+			<li><a href="study/note/tdma.pdf">三重対角行列アルゴリズム (TDMA)</a> (PDF)</li>
+			<li><a href="study/note/gas_property.pdf">ガス物性の推定</a> (PDF) <br>(付録: <a href="study/note/gas_property.xlsx">ガス物性の推定 Excel 2010 ファイル</a>)</li>
+			<li><a href="study/note/mixture_fraction.pdf">混合気体の体積分率と質量分率</a> (PDF)</li>
+			<li><a href="study/note/taylor_expansion.pdf">テイラー展開</a> (PDF)</li>
+			<li><a href="study/note/partial_differential_equation_type.pdf">偏微分方程式の型</a> (PDF)</li>
+			<li><a href="study/note/discrete_element_method.pdf">離散要素法</a> (PDF)</li>
+			<li><a href="study/note/finite_volume_method.pdf">有限体積法</a> (PDF)</li>
+			<li><a href="study/note/upwind_difference.pdf">風上差分</a> (PDF)</li>
+			<li><a href="study/note/turbulence_model.pdf">乱流モデル</a> (PDF)  <br>(付録: <a href="study/note/turb_quantities.xlsx">乱流諸量計算 Excel 2010 ファイル</a>)</li>
+			<li><a href="study/note/atmospheric_boundary_layer.pdf">大気境界層</a> (PDF)</li>
+			<li><a href="study/note/compressible_water.pdf">水の圧縮性</a> (PDF) <br>(付録: <a href="study/note/compressible_water.xlsx">水の圧縮性 Excel 2010 ファイル</a>)</li>
+			<li><a href="study/note/capillarity.pdf">毛細管現象</a> (PDF)</li>
+			<li><a href="study/note/floating_body.pdf">浮体の安定性</a> (PDF)</li>
+			<li><a href="study/note/OpenFOAM.pdf">OpenFOAM ノート</a> (PDF)</li>
+			<li><a href="study/note/splitting_method.pdf">スプリッティング法</a> (PDF)</li>
+			<li><a href="study/note/hydrocarbon.html">炭化水素</a></li>
+			<li><a href="study/note/broyden_method.pdf">Broyden 法</a> (PDF)</li>
+			<li><a href="study/note/reaction_rate.pdf">化学反応速度</a> (PDF)</li>
+			<li><a href="study/note/cfd_code_collection.pdf">CFD コード断片集</a> (PDF)</li>
+			<li><a href="study/note/work_and_energy.pdf">仕事とエネルギー</a> (PDF)</li>
+			<li><a href="study/note/inner_product.pdf">ベクトルの内積</a> (PDF)</li>
+			<li><a href="study/note/trigonometric_function.pdf">三角関数の公式</a> (PDF)</li>
+			<li><a href="study/note/kinetic_theory_granular_flow.pdf">固気混相流モデル</a> (PDF)</li>
+			<li><a href="study/note/multiphase_flow.pdf">混相流モデル</a> (PDF)</li>
+			<li><a href="study/note/number.pdf">数について</a> (PDF)</li>
+			</ul>
+
+			<h3>FrontFlow/red</h3>
+			<ul>
+			<li><a href="study/FrontFlowRed/FFR-gfortran.html">FrontFlow/red のコンパイル</a></li>
+			<li><a href="study/FrontFlowRed/FFR-gfortran-mingw64.html">FrontFlow/red のコンパイル (Windows 版)</a></li>
+			<li><a href="study/FrontFlowRed/FFR-run.html">FrontFlow/red の実行</a></li>
+			<li><a href="study/FrontFlowRed/FFR-run-parallel.html">FrontFlow/red で並列計算の実行</a></li>
+			</ul>
+
+			<h3>Code_Saturne</h3>
+			<ul>
+			<li><a href="study/Code_Saturne/Code_Saturne_setup.html">Code_Saturne のコンパイル</a></li>
+			<li><a href="study/Code_Saturne/Code_Saturne_example/Code_Saturne_example.html">Code_Saturne を使ってみる</a></li>
+			</ul>
+
+			<h3>Kratos</h3>
+			<ul>
+				<li><a href="study/Kratos/Kratos_compile/Kratos_compile.html">Kratos のコンパイル</a></li>
+			</ul>
+
+			<h3>Fluidity</h3>
+			<ul>
+			<li><a href="study/Fluidity/install/install.html">Fluidity のインストール</a></li>
+			<li><a href="study/Fluidity/example/example.html">Fluidity を使ってみる</a></li>
+			</ul>
+
+			<h3>コンピュータ・グラフィックス</h3>
+			<ul>
+			<li><a href="study/SPlisHSPlasH/SPlisHSPlasH/SPlisHSPlasH.html">SPlisHSPlasH のコンパイル</a></li>
+			<li><a href="study/SPlisHSPlasH/PBD/PBD.html">PositionBasedDynamics のコンパイル</a></li>
+			<li><a href="study/Jet_Framework/Jet_Framework.html">Jet Framework のコンパイル</a></li>
+			<li><a href="study/GridFluidSim3D/GridFluidSim3D.html">GridFluidSim3D のコンパイル</a></li>
+			<li><a href="study/DualSPHysics/DualSPHysics.html">DualSPHysics のセットアップ</a></li>
+			</ul>
+
+			<h3>LIGGGHTS</h3>
+			<ul>
+			<li><a href="study/LIGGGHTS/LIGGGHTS/LIGGGHTS.html">LIGGGHTS のインストール</a></li>
+			<li><a href="study/LIGGGHTS/LIGGGHTS-example/LIGGGHTS-example.html">LIGGGHTS を使ってみる</a></li>
+			</ul>
+
+			<h3>Code_Aster</h3>
+			<ul>
+			<li><a href="study/Code_Aster/Code_Aster_setup.html">Code_Aster のコンパイル</a></li>
+			<li><a href="study/Code_Aster/Salome-Meca/Salome-Meca.html">Salome-Meca 入門</a></li>
+			</ul>
+
+			<h3>DelFEM</h3>
+			<ul>
+			<li><a href="study/DelFEM/DelFEM_sample.html">DelFEM のサンプルをコンパイルしてみたメモ</a></li>
+			<li><a href="study/DelFEM/DelFEM_example/DelFEM_example.html">DelFEM を使ってみる</a></b></li>
+			<li><a href="study/DelFEM/DelFEM_devel_env.html">DelFEM の開発環境の整備</a></li>
+			</ul>
+
+			</td>
+
+			<td valign="top">
+			<h3>OpenFOAM</h3>
+			<ul>
+			<li><a href="study/OpenFOAM/OpenFOAM-info.html">OpenFOAM 情報</a></li>
+			<li><a href="study/OpenFOAM/install_memo/install_memo.html">OpenFOAM のインストール</a></li>
+			<li><a href="study/OpenFOAM/overview/overview.html">OpenFOAM の概要</a></li>
+			</ul>
+			<p><a href="study/OpenFOAM/index.html">もっと見る ...</a></p>
+
+			<h3>preCICE</h3>
+			<ul>
+			<li><a href="study/preCICE/OpenFOAM_CalculiX_FSI/OpenFOAM_CalculiX_FSI.html">preCICE のセットアップ</a></li>
+			</ul>
+
+			<h3>ParaView</h3>
+			<ul>
+			<li><a href="study/ParaView/FLUENT/FLUENT.html">FLUENT ユーザーのための ParaView 入門</a></li>
+			<li><a href="study/ParaView/animation/animation.html">ParaView によるアニメーション作成</a></li>
+			<li><a href="study/ParaView/parallel.html">並列環境における ParaView の利用</a></li>
+			<li><a href="study/ParaView/custom_filter.html">カスタムフィルタの作成</a></li>
+			<li><a href="study/ParaView/programmable_filter.html">Programmable Filter</a></li>
+			<li><a href="study/ParaView/Python/Python.html">Python による ParaView の操作</a></li>
+			<li><a href="study/ParaView/Python/Python_OpenFOAM.html">Python による ParaView の操作 (OpenFOAM 編)</a></li>
+			<li><a href="study/ParaView/stereo/stereo.html">ParaView で立体視</a></li>
+			<li><a href="study/ParaView/VR/VR.html">ParaView で立体視 (VR 編)</a></li>
+			<li><a href="study/ParaView/ParaView-memo.html">ParaView メモ</a></li>
+			</ul>
+
+			<ul>
+			<li><a href="study/ParaView/VTK/VTK.html">VTK ファイルフォーマット</a></li>
+			<li><a href="study/ParaView/contour/contour.html">2 次元データのコンター表示</a></li>
+			<li><a href="study/ParaView/interpolate/interpolate.html">2 次元データの補間</a></li>
+			<li><a href="study/ParaView/contour_line_surface/contour_line_surface.html">等高線からサーフェイスを作る</a></li>
+			</ul>
+
+			<h3>Salome</h3>
+			<ul>
+			<li><a href="study/Code_Aster/Salome-Meca/Salome-Meca.html">Salome-Meca 入門</a></li>
+			<li><a href="study/Salome/point_projection.html">点の投射</a></li>
+			<li><a href="study/Salome/compound/compound.html">複数のオブジェクトをまとめる</a></li>
+			<li><a href="study/Salome/hide_object_selection/hide_object_selection.html">隠れたオブジェクトの複数選択</a></li>
+			<li><a href="study/Salome/unpublish.html">オブジェクトを消す</a></li>
+			<li><a href="study/Salome/segment/segment.html">分割数の指定</a></li>
+			<li><a href="study/Salome/extrusion/extrusion.html">押し出しによるメッシュ生成</a></li>
+			<li><a href="study/Salome/hexahedron/hexahedron.html">六面体メッシュ生成</a></li>
+			<li><a href="study/Salome/hexahedron2/hexahedron2.html">六面体メッシュ生成 2</a></li>
+			<li><a href="study/Salome/hexa_tetra/hexa_tetra.html">六面体-四面体混合メッシュ生成</a></li>
+			<li><a href="study/Salome/pyramid/pyramid.html">六面体と四面体の接続</a></li>
+			<li><a href="study/Salome/boundary_layer/boundary_layer.html">境界層メッシュの生成</a></li>
+			<li><a href="study/Salome/body_fitting/body_fitting.html">直交格子によるメッシュ生成</a></li>
+			<li><a href="study/Salome/hexablock/hexablock.html">HexaBlock を使う</a></li>
+			<li><a href="study/Salome/notebook/notebook.html">変数の利用</a></li>
+			<li><a href="study/Salome/delete_dependency.html">オブジェクトの依存関係の強引なを削除</a></li>
+			<li><a href="study/Salome/python/python.html">Python スクリプトの利用</a></li>
+			<li><a href="study/Salome/python_memo.html">Salome Python メモ</a></li>
+			</ul>
+
+			<h3>Netgen</h3>
+			<ul>
+			<li><a href="study/Netgen/Netgen_install/Netgen_install.html">Netgen インストールメモ</a></li>
+			<li><a href="study/OpenFOAM/Netgen/Netgen.html">Netgen で OpenFOAM 用メッシュを作る</a></li>
+			</ul>
+
+			<h3>Gmsh</h3>
+			<ul>
+			<li><a href="study/Gmsh/Gmsh.html">Gmsh の使い方</a></li>
+			<li><a href="study/OpenFOAM/Gmsh/Gmsh.html">Gmsh で OpenFOAM 用メッシュを作る</a></li>
+			</ul>
+
+			<h3>pythonOCC</h3>
+			<ul>
+			<li><a href="study/pythonOCC/pythonOCC_compile.html">pythonOCC のコンパイル</a></li>
+			<li><a href="study/OpenFOAM/pythonOCC/pythonOCC.html">pythonOCC による OpenFOAM 用モデルの作成</a></li>
+			</ul>
+
+			<h3>OpenMDAO</h3>
+			<ul>
+			<li><a href="study/OpenMDAO/setup/setup.html">OpenMDAO のセットアップ</a></li>
+			<li><a href="study/OpenMDAO/introduction/introduction.html">OpenMDAO を使ってみる</a></li>
+			</ul>
+
+			<h3>Dakota</h3>
+			<ul>
+			<li><a href="study/Dakota/Dakota.html">Dakota を使ってみる</a></li>
+			<li><a href="study/Dakota/CFD/CFD.html">Dakota の流体解析への適用</a></li>
+			</ul>
+
+			<h3>DWSIM</h3>
+			<ul>
+			<li><a href="study/DWSIM/ChemSep_database.html">ChemSep のデータベースを使う</a></li>
+			<li><a href="study/DWSIM/binary_envelope/binary_envelope.html">2 成分系の相図の作成</a></li>
+			</ul>
+
+			<h3>その他</h3>
+			<ul>
+			<li><a href="study/FiPy/FiPy.html">FiPy を使う</a></li>
+			<li><a href="study/OpenCalphad/OpenCalphad.html">OpenCalphad を使ってみる</a></li>
+			<li><a href="study/NASA_CEA.html">NASA CEA を使う</a></li>
+			</ul>
+
+			<ul>
+			<li><a href="study/memo.html">単位・定数のメモ</a></li>
+			<li><a href="study/link.html">リンク集</a></li>
+			<li><a href="study/CAE_quotations.html">CAE 引用集</a></li>
+			</ul>
+
+			</td></tr>
+
+			</tbody>
+			</table>
+
+
+			<h2></h2>
+
+			<ul>
+			<li><a href="others/GTD/GTD.html">GTD</a></li>
+			<li><a href="others/love_and_fear.html">愛と怖れ</a></li>
+			<li><a href="others/sleep.html">睡眠の技術</a></li>
+			</ul>
+		</td>
+		</tr>
+
+		<tr><td id="border"></td></tr>
+		<tr><td id="copyright">PENGUINITIS since 2002 <a href="mailto:penguinitis2002@yahoo.co.jp">Yuu Kasuga</a></p></td></tr>
+	</tbody>
+	</table>
+</body>
 </html>
+
