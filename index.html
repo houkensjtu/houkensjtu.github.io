@@ -18,13 +18,47 @@
 </head>
 
 <body>
-	<h1>Geekhead</h1>
-   <!-- unsplash是一个无料的图片库，下面这个链接会自动生成一些图片挺cool的哦 -->
-	<img src="https://source.unsplash.com/random/800x600" alt=""> <br>
 	
-   <!-- a就是一个超链接，href表示要链接的地址; target表示另打开一个tab -->
-	<a href="./posts/2020-04-06-html_basics.html">Html/CSS basics</a> <br>
-	<a href="./posts/2020-04-08-toefl.html" target="_blank">After TOEFL iBT</a> <br>
+	<header id="main-header">
+	   <h1>Geekhead</h1>
+      <!-- unsplash是一个无料的图片库，下面这个链接会自动生成一些图片挺cool的哦 -->
+	   <img src="https://source.unsplash.com/random/800x600" alt="">
+	</header>
 
+	<!-- a就是一个超链接，href表示要链接的地址; target表示另打开一个tab -->
+	<!-- ul是unordered list-->
+	<div id="diary">
+		<h2>Random thoughts</h2>
+		<ul> 
+			<li><a href="./posts/2020-04-08-toefl.html" target="_blank">After TOEFL iBT</a> </li>
+		</ul>
+	</div>
+	
+   <div id="programming">
+		<h2>Programming</h2>
+		<ul>
+			<li><a href="./posts/2020-04-06-html_basics.html">Html/CSS basics</a> </li>
+		</ul>
+	</div>
+
+	<div id="math">
+		<h2>Math</h2>
+	</div>
+
+	<footer id="about">
+		<h2>About</h2>
+		<ul>
+			<li>Email: houkensjtu@gmail.com</li>
+			<li>2020 houkensjtu copyright &copy; reserved</li>
+		</ul>
+	</footer>
+
+	<div id="code">
+		<!-- code在网页上会显示不同的字体，但是没有语法高亮-->
+		<code>
+			(define (square x) <br>
+			        (* x x))
+		</code>
+	</div>
 </body>
 </html>
