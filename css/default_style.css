@@ -1,0 +1,39 @@
+/* CSS Selectors */
+/* # 表示抓取id, .表示抓取class 
+header {
+	color: hotpink;
+}
+#note {
+	color: lightgreen;
+}
+
+h1 {
+	background-color: greenyellow;
+}
+#note,
+#about {
+	border: 1px solid black;
+	padding: 10px;
+	margin-bottom: 5px;
+}
+
+p {
+	align-content: center;
+	background-color: khaki;
+}
+
+body {
+	background-color: darkgrey;
+}
+*/
+header {
+	/* Font for the header */
+	font-family: 'Oswald', sans-serif;
+}
+div {
+	/* Font for english contents */
+	font-family: 'Gotu', sans-serif;
+}
+body {
+	font-family: 'Noto Sans SC', sans-serif;
+}

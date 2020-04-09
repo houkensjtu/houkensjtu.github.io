@@ -15,6 +15,19 @@
 
 	<!--网站的标题，出现在浏览器的标签上-->
 	<title>BiscuiZ</title>
+
+	<!-- 这是一种内部使用css的方式，但是也不推荐;推荐的做法是把所有styling放到css文件中
+	/* Internal CSS */
+	<style>
+		h2 {
+			color:crimson;
+		}
+	</style>
+	-->
+	<!-- 这是推荐的，external CSS的用法：在head中使用link tag -->
+	<link rel="stylesheet" href="./css/default_style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Gotu&family=Noto+Sans+SC&family=Oswald:wght@500&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -22,27 +35,27 @@
 	<header id="main-header">
 	   <h1>Geekhead</h1>
       <!-- unsplash是一个无料的图片库，下面这个链接会自动生成一些图片挺cool的哦 -->
-	   <img src="https://source.unsplash.com/random/800x600" alt="">
+	   <img src="https://source.unsplash.com/random/400x300" alt="">
 	</header>
 
 	<!-- a就是一个超链接，href表示要链接的地址; target表示另打开一个tab -->
 	<!-- ul是unordered list-->
 	<div id="diary">
-		<h2>Random thoughts</h2>
+		<h2>Blog</h2>
 		<ul> 
 			<li><a href="./posts/2020-04-08-toefl.html" target="_blank">After TOEFL iBT</a> </li>
 		</ul>
 	</div>
 	
-   <div id="programming">
-		<h2>Programming</h2>
+   <div id="code">
+		<h2>Code</h2>
 		<ul>
 			<li><a href="./posts/2020-04-06-html_basics.html">Html/CSS basics</a> </li>
 		</ul>
 	</div>
 
-	<div id="math">
-		<h2>Math</h2>
+	<div id="note">
+		<h2>Notes</h2>
 	</div>
 
 	<footer id="about">
@@ -55,10 +68,12 @@
 
 	<div id="code">
 		<!-- code在网页上会显示不同的字体，但是没有语法高亮-->
-		<code>
+		<!-- 这里的style属性是一种inline css，不推荐使用 -->
+		<code style="color:darkslateblue">
 			(define (square x) <br>
 			        (* x x))
 		</code>
+
 	</div>
 </body>
 </html>
