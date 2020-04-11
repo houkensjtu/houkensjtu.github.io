@@ -32,8 +32,13 @@ header {
 }
 div {
 	/* Font for english contents */
-	font-family: 'Gotu', sans-serif;
+	font-family: 'Noto Sans SC', 'Gotu', sans-serif;
 }
 body {
 	font-family: 'Noto Sans SC', sans-serif;
+	width: 660px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../images/checker.png");
+	background-repeat: repeat;
 }
