@@ -36,7 +36,7 @@ div {
 }
 body {
 	font-family: 'Noto Sans SC', sans-serif;
-	width: 60%;
+	max-width: 800px;
 	margin-left: auto;
 	margin-right: auto;
 	background-image: url("../images/checker.png");
