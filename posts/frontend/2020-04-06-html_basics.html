@@ -1,22 +1,47 @@
 
-<link href="https://fonts.googleapis.com/css2?family=Gotu&family=Oswald&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>html/css基础</title>
+   <link rel="stylesheet" href="../../css/default_style.css">
 
-## HTML Basics
+   <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Noto+Sans+SC&display=swap" rel="stylesheet">
+   
+   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <link rel="stylesheet"
+      href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.1/styles/github-gist.min.css">
+   <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.1/highlight.min.js"></script>
+   <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body>
+<h2>HTML Basics</h2>
 
 HTML和CSS是最基本的网页构成元素。HTML负责记述网页结构和内容，CSS则负责记述这些结构和内容的大小，字体，排版及风格。
 
-### 1. HTML的原子
+<h3>HTML的原子</h3>  
 HTML的构成原子，是一个一个的tag语句。这些语句的基本构成元素是：
-1. 起始tag
-2. 结束tag
-3. 内容
-4. 属性（optional）
-```html
-<p class="myMotto"> Be real. </p> 
-```
+<ol>
+<li>起始tag</li>
+<li>结束tag</li>  
+<li>内容</li>
+<li>属性（optional）</li>
+</ol>
+
+<pre><code class="html">
+  < !-- Comment-- >
+  < p > Tag < /p >
+    <p class="myMotto"> Be real. </p> 
+</code></pre>
+
 注意属性在起始tag之内，与tag名用空格隔开，属性的值最好用引号包括起来。
 
-#### Tag的嵌套
+<h3>Tag的嵌套</h3>  
 ```html
 <p class="myMotto"> Be <strong>real</strong>. </p> 
 ```
@@ -284,3 +309,5 @@ myImage.onclick = function() {
     }
 }
 ```
+
+</body>

@@ -30,15 +30,24 @@ header {
 	/* Font for the header */
 	font-family: 'Oswald', sans-serif;
 }
+
 div {
 	/* Font for english contents */
 	font-family: 'Noto Sans SC', 'Gotu', sans-serif;
 }
+
 body {
+	padding: 1em;
 	font-family: 'Noto Sans SC', sans-serif;
 	max-width: 800px;
 	margin-left: auto;
 	margin-right: auto;
 	background-image: url("../images/checker.png");
 	background-repeat: repeat;
+}
+
+img {
+	display: block;
+	margin: auto;
+	padding: 4em;
 }
