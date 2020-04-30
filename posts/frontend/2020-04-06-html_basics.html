@@ -16,11 +16,11 @@
       href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.1/styles/github-gist.min.css">
    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.1/highlight.min.js"></script>
    <script>hljs.initHighlightingOnLoad();</script> 
-  
-</head>
+
+   </head>
 
 <body>
-<h2>HTML Basics</h2>
+<h2>HTML Basics  &#128035;</h2>
 
 HTML和CSS是最基本的网页构成元素。HTML负责记述网页结构和内容，CSS则负责记述这些结构和内容的大小，字体，排版及风格。
 
@@ -34,9 +34,15 @@ HTML的构成原子，是一个一个的tag语句。这些语句的基本构成�
 </ol>
 
 <pre><code class="html">
-  < !-- Comment-- >
-  < p > Tag < /p >
-    <p class="myMotto"> Be real. </p> 
+    &lt;!-- 以下是一个简单的p元素 --&gt;
+    &lt;!-- class是这个tag的一个属性;实用中class常被用来分组各种元素 --&gt;
+    &lt;p class="article"&gt; Be real. &lt;/p&gt;
+
+    &lt;!-- 比如在CSS中可以这样抓取同为article组的元素 --&gt;
+    .article{
+      font-size : 16px;
+    }
+
 </code></pre>
 
 注意属性在起始tag之内，与tag名用空格隔开，属性的值最好用引号包括起来。

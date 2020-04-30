@@ -1,31 +1,3 @@
-/* CSS Selectors */
-/* # 表示抓取id, .表示抓取class 
-header {
-	color: hotpink;
-}
-#note {
-	color: lightgreen;
-}
-
-h1 {
-	background-color: greenyellow;
-}
-#note,
-#about {
-	border: 1px solid black;
-	padding: 10px;
-	margin-bottom: 5px;
-}
-
-p {
-	align-content: center;
-	background-color: khaki;
-}
-
-body {
-	background-color: darkgrey;
-}
-*/
 header {
 	/* Font for the header */
 	font-family: 'Oswald', sans-serif;
@@ -44,6 +16,22 @@ body {
 	margin-right: auto;
 	background-image: url("../images/checker.png");
 	background-repeat: repeat;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	font-size: 14px;
+	color: darkblue;
+}
+
+a:hover {
+}
+
+a:visited {
+	color: darkblue;
 }
 
 img {
