@@ -12,24 +12,24 @@
    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
+  <!-- 下面是安装并使用highlightJs给代码提供高亮所需要的 -->
   <link rel="stylesheet"
       href="../../css/hljs_styles/github-gist.css">
    <script src="../../css/highlight.pack.js"></script>
    <script>hljs.initHighlightingOnLoad();
-  console.log("Hello!")</script> 
-
+   </script> 
    </head>
 
 <body>
 <h2>HTML Basics  &#128035;</h2>
 
-HTML和CSS是最基本的网页构成元素。HTML负责记述网页结构和内容，CSS则负责记述这些结构和内容的大小，字体，排版及风格。
+HTML和CSS是最基本的网页构成元素。HTML负责记述网页结构和内容，CSS负责记述这些内容的排版，字体，及风格等。
 
-<h3>HTML的原子</h3>  
+<h3>HTML原子的基本结构</h3>  
 HTML的构成原子，是一个一个的tag语句。这些语句的基本构成元素是：
 <ol>
 <li>起始tag</li>
-<li>结束tag</li>  
+<li>结束tag（有些tag是不需要结束的，比如&lt;img&gt;，&lt;br&gt;，这种叫做self-closing）</li>  
 <li>内容</li>
 <li>属性（optional）</li>
 </ol>
@@ -43,13 +43,83 @@ HTML的构成原子，是一个一个的tag语句。这些语句的基本构成�
     .article{
       font-size : 16px;
     }
+
 </code></pre>
 
+所谓的属性(attribute)也就是上面例子中的class,或者经常会用到的id, style = "..."之类，主要是用于给tag做区分，便于CSS和Javascript抓取。
 注意属性在起始tag之内，与tag名用空格隔开，属性的值最好用引号包括起来。
 
-<h3>Tag的嵌套</h3>  
-```html
-<p class="myMotto"> Be <strong>real</strong>. </p> 
+
+<h3>HTML网页的Boilerplate</h3>
+Boilerplate就是一个基础模板，在很多现代编辑器中都有很便捷的快捷键对应。比如在Visual studio code里，只要在一个空白的html文件中键入!并键盘输入Tab，就会返回如下的模板：
+
+<pre><code>
+  &lt;!DOCTYPE html&gt;
+  &lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+  &lt;/body&gt;
+  &lt;/html&gt;
+</code></pre>
+
+<p>1.开头的DOCTYPE是告诉浏览器html版本的声明，在过去有很多版本林立的时候，需要写HTML VER 4.0之类复杂的声明，但是HTML5以后这一切都被简化，
+现在只需要写html即可，默认是HTML5.</p>
+
+<p>
+2.&lt;head&gt;中存放的是一些关于网页的管理信息，比如网页的标题，CSS文件和Javascript文件的位置等
+</p>
+
+<p>
+3.&lt;meta&gt;中的charset是一个重要的设定，决定了文件的编码格式。现在绝绝大多数网页都采用了UTF-8编码，可以对应基本所有的
+人类语言。在一些比较旧的日语或者中文网页偶尔会发现浏览器乱码，原因就是网页采用了比较旧的编码格式，那些编码对应到UTF-8就是一些
+奇怪的符号，所以就产生了文字化け。另外，UTF-8还包括了很多emoji，比如本页的标题:)
+</p>
+
+<p>
+4.其他还有一些meta标签，比如description，keyword之类，也是帮助浏览器认识网页用的，Google会利用这些标签来帮助其搜索内容。
+</p>
+
+<h3>一些基础的Tag</h3>
+
+这里插一条VS Code的小技巧：由于在html网页编辑过程中，不能直接使用&lt;符号，会被认为是标签而不显示，因此必须用特殊转义符号
+&amplt;，这样拷贝来的html代码要一个一个手动换成lt就会非常麻烦，这个时候可以使用replace功能。我所用的Emacs风格keybinding
+中，替换的快捷键是M-%。
+
+<pre><code>
+  &lt;h3&gt;Heading&lt;/h3&gt;
+
+  &lt;p&gt;Paragraph&lt;/p&gt;
+
+  &lt;hr&gt; &lt;!--Horizontal line--&gt;
+
+  &lt;strong&gt; Bold text &lt;/strong&gt;
+
+  &lt;em&gt; Italic text &lt;/em&gt;
+  
+  &lt;!-- Unordered list--&gt;
+  &lt;ul&gt;
+    &lt;li&gt;List item&lt;/li&gt;
+    &lt;li&gt;List item&lt;/li&gt;
+    &lt;li&gt;List item&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;!-- Ordered list--&gt;
+  &lt;ol&gt;
+    &lt;li&gt;List item&lt;/li&gt;
+    &lt;li&gt;List item&lt;/li&gt;
+    &lt;li&gt;List item&lt;/li&gt;
+  &lt;/ol&gt;
+
+</code></pre>
+有些Tag比如&lt;strong&gt;，表示加粗
+
+
+
 ```
 
 #### 没有内容的tag

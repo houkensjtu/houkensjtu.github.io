@@ -39,3 +39,8 @@ img {
 	margin: auto;
 	padding: 4em;
 }
+
+code {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
