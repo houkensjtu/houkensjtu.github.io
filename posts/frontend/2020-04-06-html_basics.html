@@ -47,10 +47,20 @@ HTML的构成原子，是一个一个的tag语句。这些语句的基本构成�
     }
 
 </code></pre>
-
+<p>
 所谓的属性(attribute)也就是上面例子中的class,或者经常会用到的id, style = "..."之类，主要是用于给tag做区分，便于CSS和Javascript抓取。
-注意属性在起始tag之内，与tag名用空格隔开，属性的值最好用引号包括起来。
+注意属性在起始tag之内，与tag名用空格隔开，属性的值最好用引号包括起来。常用的属性有以下这些：
+<ol>
+<li>id: 元素的ID，一般ID是特殊的，不会有相同ID的两个元素</li>
 
+<li>class: 表示元素的组别，同一个组别可以有多个元素。比如我可以给一个div元素一个container的class，然后在CSS中抓取这个class来做格式化。</li>
+
+<li>href: 也就是URL地址，是链接&lt;a&gt;必须要有的属性。</li>
+
+<li>src: 表示文件的地址，是&lt;img&gt;必须要有的属性。</li>
+
+</ol>
+</p>
 
 <h3>HTML网页的Boilerplate</h3>
 Boilerplate就是一个基础模板，在很多现代编辑器中都有很便捷的快捷键对应。比如在Visual studio code里，只要在一个空白的html文件中键入!并键盘输入Tab，就会返回如下的模板：
