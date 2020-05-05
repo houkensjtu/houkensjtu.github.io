@@ -22,42 +22,41 @@
 <body>
 <h2>Python Basics  &#128035;</h2>
 
-<p style="text-align: right;">2020-05-05 09:24:59</p>
+<p style="text-align: right;">2020-05-05</p>
 
 <h3>基本数据类型</h3>
 <p>
   Python是一门动态类型的语言，同时也是一门强类型语言（strongly typed）。动态类型指的是你可以将变量名反复绑定到不同类型的
   数据上而不会出错。强类型指的是你还是需要遵循类型的运算规则，不能混淆不同类型而让编译器去处理类型转换。
   <pre>
-     <code>
-      # 动态类型的示例
-      >>> x = 3
-      >>> type(x)
-      &lt;class 'int'&gt;
-      >>> x = "crazyness"
-      >>> type(x)
-      &lt;class 'str'&gt;
+  <code>
+  # 动态类型的示例;在静态类型语言中，一旦类型声明，是不可以进行如下的赋值的
+  >>> x = 3
+  >>> type(x)
+  &lt;class 'int'&gt;
+  >>> x = "crazyness"
+  >>> type(x)
+  &lt;class 'str'&gt;
 
-      # 强类型的示例
-      >>> x + 3
-      Traceback (most recent call last):
-        File "&lt;stdin&gt;", line 1, in &lt;module&gt;
-      TypeError: can only concatenate str (not "int") to str
-      
-     </code>
+  # 强类型的示例;由于String没有加法这种运算所以报错，不像Javascript中会允许这种操作
+  >>> x + 3
+  Traceback (most recent call last):
+  File "&lt;stdin&gt;", line 1, in &lt;module&gt;
+  TypeError: can only concatenate str (not "int") to str
+  </code>
   </pre>
   
   Python的基本数据类型都是用类来实现的。
   <pre>
-     <code>
-      # 查看变量的类型
-      >>> type(1)
-      &lt;class 'int'&gt;
-      >>> type(3.14)
-      &lt;class 'float'&gt;
-      >>> type("playful cleverness")
-      &lt;class 'str'&gt;
-     </code>
+  <code>
+  # 查看变量的类型
+  >>> type(1)
+  &lt;class 'int'&gt;
+  >>> type(3.14)
+  &lt;class 'float'&gt;
+  >>> type("playful cleverness")
+  &lt;class 'str'&gt;
+  </code>
   </pre>
 
 </p>
@@ -65,21 +64,100 @@
 <p>
    String类型在Python中可以双引号，也可以用单引号。String可以用加号连接，String还有一些其他常用的转换大小写方法。
 <pre>
+<code class="python">
+  >>> firstName = "qian"
+  >>> lastName = "bao"
+    
+  # String的加法
+  >>> fullName = firstName + " " + lastName
+  >>> fullName
+  'qian bao'
+  
+  # String类型的一些方法
+  >>> fullName.title()
+  'Qian Bao'
+  >>> fullName.upper()
+  'QIAN BAO'
+  </code>
+</pre>
+</p>
+
+<p>
+   Python中多行代码可以用斜杠来表述。多行的String可以用三引号来表示。
+<pre>
    <code>
-      >>> firstName = "qian"
-      >>> lastName = "bao"
-      
-      # String的加法
-      >>> fullName = firstName + " " + lastName
-      >>> fullName
-      'qian bao'
-      
-      # String类型的一些方法
-      >>> fullName.title()
-      'Qian Bao'
-      >>> fullName.upper()
-      'QIAN BAO'
+   >>> print("This is a very long \
+   ... line of code.")
+   This is a very long line of code.
+   >>> print("""I have a very verbal
+   ... comment""")
+   I have a very verbal comment
    </code>
 </pre>
+</p>
+
+<h3>简单的List数据结构</h3>
+
+<p>List是Python中经常用到的数据结构。List在Python中方括号定义，List中的元素不需要同类型
+   取用List元素时也用方括号表示index，注意List的元素都是从0而不是1开始;-1代表的是List中最后一个元素。
+<pre>
+   <code>
+   # List中既可以存储同类型数据，也可以存储不同类型
+   >>> fruits = ['apple', 'pear', 'melon', 'orange']
+   >>> print(fruits)
+   ['apple', 'pear', 'melon', 'orange']
+
+   # List元素的访问
+   >>> fruits[0]
+   'apple'
+   >>> fruits[-1]
+   'orange'
+   >>> fruits[1:3]
+   ['pear', 'melon']
+   </code>
+</pre>
+</p>
+
+<p>
+   List是可以动态修改的数据结构，也就是说你可以在建立List以后任意添加或者删掉元素。
+   <pre>
+   <code>
+   >>> fruits
+   ['apple', 'pear', 'melon', 'orange']
+
+   # 向末尾添加一个元素
+   >>> fruits.append('banana')
+   >>> fruits
+   ['apple', 'pear', 'melon', 'orange', 'banana']
+   # 删除一个元素
+   >>> del fruits[0]
+   >>> fruits
+   ['pear', 'melon', 'orange', 'banana']
+   
+   # 获得（pop）一个元素
+   >>> myFruit = fruits.pop()
+   >>> myFruit
+   'banana'
+   </code>
+   </pre>
+</p>
+
+<p>
+   List有内建的排序方法可以使用。
+   <pre>
+   <code class="python">
+   >>> fruits
+   ['pear', 'melon', 'orange']
+
+   # 暂时排序
+   >>> sorted(fruits)
+   ['melon', 'orange', 'pear']
+
+   # 修改性排序
+   >>> fruits.sort()
+   >>> fruits
+   ['melon', 'orange', 'pear']
+   </code>
+   </pre>
 </p>
 </body>
